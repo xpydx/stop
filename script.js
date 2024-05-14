@@ -24,7 +24,7 @@ function haha() {
 
 function hae() {
   var alamak = setInterval(function () {
-    let multop = (document.getElementById("mul").style.display = "none");
+    document.getElementById("mul").style.display = "none";
     document.getElementById("stop").style.display = "block";
     det = det + 1;
     if (det == 100) {
@@ -37,9 +37,7 @@ function hae() {
       mili.innerHTML = det;
     }
   }, 10);
- 
-
-  var detik = setInterval(function () {
+  var hhhhh = setInterval(function () {
     deti = deti + 1;
     if (deti == 60) {
       deti = deti - 60;
@@ -66,10 +64,11 @@ function hae() {
     }
   }, 975);
 
- stop.onclick = berhenti;
+  stop.onclick = berhenti;
   function berhenti() {
     document.getElementById("stop").style.display = "none";
     letmultop = document.getElementById("mul").style.display = "block";
     clearInterval(alamak);
+    clearInterval(hhhhh);
   }
 }
