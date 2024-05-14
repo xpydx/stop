@@ -62,7 +62,7 @@ function hae() {
     } else {
       jam.innerHTML = jamm;
     }
-  }, 975);
+  }, 1000);
 
   stop.onclick = berhenti;
   function berhenti() {
