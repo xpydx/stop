@@ -29,8 +29,23 @@ function hae() {
     det = det + 1;
     if (det == 100) {
       det = det - 100;
-      deti = deti + 1;
     }
+
+    if (det < 10) {
+      mili.innerHTML = "0" + det;
+    } else {
+      mili.innerHTML = det;
+    }
+  }, 10);
+  stop.onclick = berhenti;
+  function berhenti() {
+    document.getElementById("stop").style.display = "none";
+    letmultop = document.getElementById("mul").style.display = "block";
+    clearInterval(alamak);
+  }
+
+  var detik = setInterval(function () {
+    deti = deti + 1;
     if (deti == 60) {
       deti = deti - 60;
       menitt = menitt + 1;
@@ -38,12 +53,6 @@ function hae() {
     if (menitt == 60) {
       menitt = menitt - 60;
       jamm = jamm + 1;
-    }
-
-    if (det < 10) {
-      mili.innerHTML = "0" + det;
-    } else {
-      mili.innerHTML = det;
     }
     if (deti < 10) {
       detik.innerHTML = "0" + deti;
@@ -60,11 +69,6 @@ function hae() {
     } else {
       jam.innerHTML = jamm;
     }
-  }, 10);
-  stop.onclick = berhenti;
-  function berhenti() {
-    document.getElementById("stop").style.display = "none";
-    letmultop = document.getElementById("mul").style.display = "block";
-    clearInterval(alamak);
-  }
+  }, 975);
 }
+
