@@ -37,12 +37,7 @@ function hae() {
       mili.innerHTML = det;
     }
   }, 10);
-  stop.onclick = berhenti;
-  function berhenti() {
-    document.getElementById("stop").style.display = "none";
-    letmultop = document.getElementById("mul").style.display = "block";
-    clearInterval(alamak);
-  }
+ 
 
   var detik = setInterval(function () {
     deti = deti + 1;
@@ -70,5 +65,11 @@ function hae() {
       jam.innerHTML = jamm;
     }
   }, 975);
-}
 
+ stop.onclick = berhenti;
+  function berhenti() {
+    document.getElementById("stop").style.display = "none";
+    letmultop = document.getElementById("mul").style.display = "block";
+    clearInterval(alamak);
+  }
+}
