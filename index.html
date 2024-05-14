@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stop watch</title>
+    <link rel="shortcut icon" href="fb-stopwatch2.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#1e90ff] max-w-xs lg:max-w-full">
+    <div
+      class="w-[500px] bg-white h-[250px] mt-[140px] pt-20 rounded-2xl shadow-lg mx-auto"
+    >
+      <div class="bg-white shadow-xl rounded-lg shadow-black w-[350px] mx-auto">
+        <div class="flex gap-10 mx-auto text-center w-full justify-center">
+          <div class="text-4xl">
+            <h1 id="9" class="text-[#0f4c82]">00</h1>
+            <h1 class="text-xl">jam</h1>
+          </div>
+          <div class="text-4xl">
+            <h1 class="text-[#0f4c82]" id="7">00</h1>
+            <h1 class="text-xl">menit</h1>
+          </div>
+          <div class="text-4xl">
+            <h1 class="text-[#0f4c82]" id="det">00</h1>
+            <h1 class="text-xl">detik</h1>
+          </div>
+          <div class="text-4xl">
+            <h1 class="text-[#0f4c82]" id="8">00</h1>
+            <h1 class="text-xl">mili detik</h1>
+          </div>
+        </div>
+      </div>
+      <div class="flex text-2xl gap-8 w-full justify-center mx-auto mt-3">
+        <button
+          id="mul"
+          class="bg-[#0eff00] mt-5 px-2 py-2 rounded-md text-white"
+        >
+          mulai
+        </button>
+        <button
+          id="stop"
+          class="bg-[#fe0000] mt-5 px-2 py-2 text-white rounded-md"
+        >
+          stop
+        </button>
+        <button
+          id="ul"
+          onclick="haha()"
+          class="bg-[#fee101] mt-5 px-2 py-2 text-white rounded-md"
+        >
+          ulang
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
